@@ -1,11 +1,8 @@
 * {
+    /* margin: Top/Bottom | Left/Right */
     /* margin: 0; */
     padding: 0;
     font-family: sans-serif;
-}
-
-.main-container {
-    margin: 0 6em; /* margin: Top/Bottom | Left/Right */
 }
 
 #two-buttons {
@@ -32,6 +29,27 @@
 
     cursor: pointer;
 }
+
+/* ------------------------------------------------------------------------------- */
+
+nav {
+    height: 56px; /* width: 100px; */
+    background-color: antiquewhite;
+    position: sticky;
+}
+
+select {
+    border: none;
+    padding: 10px;
+    pointer-events: none; /* Prevents clicking */
+}
+
+.search-box {
+    display: inline-block;
+    position: relative;
+}
+
+/* ------------------------------------------------------------------------------- */
 
 hr {
     margin: 0;
@@ -89,14 +107,14 @@ p {
 }
 
 .scale:hover {
-    transform: scale(1.15);
+    transform: scale(1.05);
 }
 
-.left {
+.left-card {
     background: rgb(217, 238, 225);
 }
 
-.right {
+.right-card {
     background: rgb(231, 233, 245);
 }
 
@@ -118,7 +136,7 @@ p {
     /* 
     Percentages are relative to the element itself, not the parent
     ---> 50% (X-axis) → move left by 50% of element's width
-    ---> 50% (Y-axis) → move up by 50% of element's height 
+    ---> 50% (Y-axis) → move up by 50% of element's height
     */
     transform: translate(-50%, -50%); /* Syntax --> transform: translate(X, Y); */
 
