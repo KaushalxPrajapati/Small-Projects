@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+
+#nav1 {
+    height: 50px;
+}
+
+#nav2 {
+    height: 40px;
+
+    display: flex;
+    flex-wrap: row;
+    flex-wrap: nowrap;
+
+    text-align: center;
+    align-content: center;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#nav2 .tutorial-link {
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+#nav2 .tutorial-link:hover {
+    background-color: rgb(4, 170, 109);
+}
+
+.side-bar {
+    height: 100vh;
+    width: 15%;
+    position: fixed;
+    top: 75px;
+    left: 0;
+    background-color: rgb(231, 233, 235);
+    overflow-y: scroll;
+}
+
+/* Change the below p to main */
+p {
+    margin-left: 15%;
+    padding: 10px;
+
+    margin-right: 100px;
+
+    text-align: justify;
+}
+
+select {
+    border: none;
+    padding: 10px;
+    pointer-events: none; /* Prevents clicking */
+}
+
+.search-box {
+    /* display: inline-block; */
+    position: relative;
+}
