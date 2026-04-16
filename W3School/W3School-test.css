@@ -63,12 +63,12 @@ select {
     pointer-events: none; /* Prevents clicking */
 }
 
+/* ------------------------------------------------------------------------------- */
 .search-box {
     display: inline-block;
     position: relative;
 }
 
-/* ------------------------------------------------------------------------------- */
 .search-box {
     position: relative;
     width: 170px;
