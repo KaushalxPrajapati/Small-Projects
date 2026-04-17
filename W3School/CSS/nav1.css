@@ -1,0 +1,83 @@
+* {
+    /* margin: Top/Bottom | Left/Right */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* ------------------------------------------------------------ */
+
+header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+
+/* ------------------------------------------------------------ */
+
+/* nav1 items styling */
+#nav1 {
+    height: 50px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+img[alt='w3school-logo'] {
+    height: 32px;
+    padding: 16px;
+    /* margin: 0 2em 0 1em; */
+}
+
+.dropdown-options {
+    margin-right: 1.5em;
+}
+
+/* for dropdowns options */
+select {
+    border: none;
+    pointer-events: none; /* It prevents clicking for now */
+    margin-right: 0.7em;
+}
+
+/* for search box */
+.search-box {
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+}
+
+.search-box {
+    position: relative;
+    width: 160px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.5em;
+    box-sizing: border-box;
+
+    color: lightgray;
+    border-radius: 20px;
+    border: 1px solid;
+}
+
+.search-box input:placeholder-shown {
+    font-style: italic;
+}
+
+.search-box i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+
+    color: rgb(85, 85, 85);
+}
+
+img[alt='three-dots-vertical'] {
+    height: 1.25em;
+    /* margin: 0 1em; */
+}
