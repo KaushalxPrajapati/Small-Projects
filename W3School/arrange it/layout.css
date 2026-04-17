@@ -42,6 +42,16 @@ header {
     background-color: black;
 }
 
+.hide {
+    height: 15px;
+    width: 100vw;
+    background-color: white;
+    position: relative;
+    top: -15px;
+    /* z-index: 1000; */
+}
+/* ---------------------------------------------------------------- */
+
 #two-buttons {
     display: flex;
     justify-content: space-between;
@@ -91,15 +101,6 @@ select {
     background-color: rgb(231, 233, 235);
     overflow-y: scroll;
     z-index: 1;
-}
-
-.hide {
-    height: 15px;
-    width: 100vw;
-    background-color: white;
-    position: relative;
-    top: -15px;
-    /* z-index: 1000; */
 }
 
 /* Change the below p to main */
