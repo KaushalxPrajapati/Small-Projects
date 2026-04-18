@@ -77,6 +77,15 @@ header {
     cursor: pointer;
 }
 
+/* Change the below p to main */
+p {
+    margin-top: 90px;
+    /* margin-left: 15%; */
+    padding: 10px;
+    margin-right: 150px;
+
+    text-align: justify;
+}
 /* ------------------------------------------------------------------------------- */
 
 nav {
@@ -103,15 +112,7 @@ select {
     z-index: 1;
 }
 
-/* Change the below p to main */
-p {
-    margin-top: 90px;
-    /* margin-left: 15%; */
-    padding: 10px;
-    margin-right: 150px;
 
-    text-align: justify;
-}
 
 select {
     border: none;
