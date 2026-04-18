@@ -4,37 +4,49 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Layout</title>
-	<link rel="stylesheet" href="layout.css">
+	<title> HTML Tutorial</title>
+	<link rel="shortcut icon" href="/assets/w3school-shortcut-icon.png" type="image/x-icon">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+	<link rel="stylesheet" href="../css/nav1.css">
+	<link rel="stylesheet" href="../css/nav2.css">
+	<link rel="stylesheet" href="../css/side-bar.css">
+	<link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
-
 	<header>
 		<nav id="nav1">
-			<div>
-				<img src="w3school-logo.png" alt="w3school-logo" height="36px">
-				<select name="options" id="">
-					<option value="Tutorial">Tutorials</option>
-				</select>
+			<div class="left-options">
+				<img src="../assets/w3school-logo.png" alt="w3school-logo">
 
-				<select name="" id="">
-					<option value="References">References</option>
-				</select>
-
-				<select name="" id="">
-					<option value="Exercises">Exercises</option>
-				</select>
-
-				<select name="" id="">
-					<option value="Certificates">Certificates</option>
-				</select>
-
+				<div class="dropdown-options-container">
+					<a href="#">Tutorial <i class="fa-solid fa-caret-down"></i></a>
+					<a href="#">References <i class="fa-solid fa-caret-down"></i></a>
+					<a href="#">Exercises <i class="fa-solid fa-caret-down"></i></a>
+					<a href="#">Certificates <i class="fa-solid fa-caret-down"></i></a>
+				</div>
 
 				<div class="search-box">
 					<input type="text" placeholder="Search..." />
 					<i class="fa-solid fa-magnifying-glass"></i>
+				</div>
+
+
+				<img src="../assets/svg/three-dots-vertical.svg" alt="three-dots-vertical">
+			</div>
+
+			<div class="right-options-container">
+				<div class="right-options">
+					<a href="">Bootcamps</a>
+					<a href="">Spaces</a>
+					<a href="">Teachers</a>
+					<a href="">Upgrade</a>
+					<a href="">Get Certified</a>
+				</div>
+
+				<div id="profile-pic">
+					<img src="../assets/kaushal.png" alt="user picture">
+					<i class="fa-solid fa-angle-down"></i>
 				</div>
 			</div>
 		</nav>
@@ -47,7 +59,7 @@
 			<a href="#" class="tutorial-link">PYTHON</a>
 			<a href="#" class="tutorial-link">JAVA</a>
 			<a href="#" class="tutorial-link">PHP</a>
-			<a href="#" class="tutorial-link">HOW TO</a>
+			<a href="#" class="tutorial-link">HOW&nbsp;&nbsp;TO</a>
 			<a href="#" class="tutorial-link">W3.CSS</a>
 			<a href="#" class="tutorial-link">C</a>
 			<a href="#" class="tutorial-link">C++</a>
@@ -77,35 +89,235 @@
 			<a href="#" class="tutorial-link">SWIFT</a>
 			<a href="#" class="tutorial-link">LINUX</a>
 		</nav>
-
-		<!--------------------------------------------------------------------------->
-
-		<div class="side-bar"></div>
-
-		<!--------------------------------------------------------------------------->
-
-		<div class="hide"></div>
 	</header>
 
-	<main>
+	<!--------------------------------------------------------------------------->
 
-		<h1>HTML Tutorial</h1>
-		<div id="two-buttons">
-			<button class="btn green">
-				<span class="btn-inside"><i class="fa-solid fa-angle-left"></i> HOME </span>
-			</button>
-			<button class="btn green">NEXT</button>
+	<div class="side-bar">
+		<h2>HTML Tutorial</h2>
+
+		<a href="#" style="background-color: rgb(4, 170, 109); color: white;">HTML Home</a>
+		<a href="#">HTML Introduction</a>
+		<a href="#">HTML Editors</a>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Basic</a>
+			<i class="fa-solid fa-caret-down"></i>
 		</div>
 
-		<br>
-		<hr>
+		<div class="dropdown-item">
+			<a href="#">HTML Elements</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Attributes</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Headings</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Paragraphs</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Styles</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Formatting</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Quotations</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Comments</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Colors</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML CSS</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Links</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Images</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Favicon</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Page Title</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Tables</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Lists</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Block & Inline</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Div</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Classes</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Id</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Buttons</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Iframes</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML JavaScript</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML File Paths</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Head</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Layout</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Responsive</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Computercode</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Semantics</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Style Guide</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Entities</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Symbols</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Emojis</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML Charsets</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML URL Encode</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+		<div class="dropdown-item">
+			<a href="#">HTML vs. XHTML</a>
+			<i class="fa-solid fa-caret-down"></i>
+		</div>
+
+	</div>
+
+	<!--------------------------------------------------------------------------->
+
+	<div class="white-strip"></div>
+
+	<!--------------------------------------------------------------------------->
+
+	<main>
+		<div class="h1-with-bookmark">
+			<h1>HTML Tutorial</h1>
+			<!-- <i class="fa-regular fa-bookmark"></i> -->
+			<img src="../assets/svg/bookmark-svg.svg" alt="bookmark-svg">
+		</div>
+
+		<div id="two-buttons">
+			<button class="btn green left-green-btn">
+				<i class="fa-solid fa-angle-left"></i>HOME
+			</button>
+			<button class="btn green right-green-btn">
+				NEXT <i class="fa-solid fa-angle-right"></i>
+			</button>
+		</div>
+
+		<!-- <br>
+		<hr> -->
 
 		<h2>Learn HTML</h2>
 		<p>HTML is the standard markup language for Web pages.
 		<p>With HTML you can create your own Website.</p>
 		<p>HTML is easy to learn - You will enjoy it!</p>
 
-		<hr>
+		<!-- <hr> -->
 
 		<div class="cards-container">
 			<div class="card left-card">
@@ -183,6 +395,13 @@
 			Aliquam voluptates, porro exercitationem ex nobis unde dolore iste delectus eaque voluptatem corporis at officia in quaerat doloremque deserunt? Atque quia porro ut ducimus totam dicta, architecto quas dolore sed!
 		</p>
 	</main>
+
+	<!--------------------------------------------------------------------------->
+
+	<footer></footer>
+
+	<!--------------------------------------------------------------------------->
+
 </body>
 
 </html>
