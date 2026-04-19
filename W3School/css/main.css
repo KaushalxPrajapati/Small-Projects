@@ -3,9 +3,15 @@ body {
 }
 
 main {
-    margin-top: 12.5em;
+    margin-top: 4em;
     margin-left: 17%;
-    margin-right: 6.5em; /* You may have to change this... later*/
+    margin-right: 10em; /* You may have to change this... later*/
+
+    padding: 1.5em;
+    /* border-right: 1px solid rgb(240, 220, 220); */
+
+    /* Make Right side-bar and set its border-left to: */
+    /* border-left: 1px solid rgb(240, 220, 220); */
 }
 /* --------------------------------------------- */
 
@@ -13,11 +19,16 @@ main {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 15px 0;
+    margin: 20px 0;
+
+    position: relative;
+    right: 10px;
+
+    z-index: -1;
 }
 
 .h1-with-bookmark h1 {
-    font-size: 42px;
+    font-size: 2.25em;
     font-weight: normal;
     padding-right: 10px;
 }
@@ -49,40 +60,57 @@ main {
     margin-bottom: 20px;
 }
 
-.left-green-btn {
-    padding: 0.5em 1.5em 0.5em 1em;
-}
+#two-buttons .right-green-btn {
+    font-size: 0.9em;
+    padding: 0.75em 0.75em 0.75em 1.2em;
 
-.right-green-btn {
-    padding: 0.5em 1em 0.5em 1.5em;
+    position: relative;
+    right: 10px;
+
+    z-index: -1;
 }
 
 /* --------------------------------------------- */
 
 h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: normal;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 p {
-    margin: 20px 0;
+    font-size: 0.9em;
+    margin: 12px 0;
 }
+
+/* --------------------------------------------- */
 
 .cards-container {
     display: flex;
     flex-direction: row; /* By Default set to this */
     justify-content: center;
     align-items: stretch;
-    padding: 20px;
-    gap: 5px;
+    padding: 20px 0;
     position: relative;
+    gap: 5px;
     margin-top: 0;
+
+    z-index: -1;
+}
+
+.cards-container h2 {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 0;
+}
+
+.cards-container p {
+    font-size: 0.85em;
+    line-height: 1.6em;
 }
 
 .card {
     flex: 1;
-    padding: 30px;
     text-align: center;
     border-radius: 10px;
 
@@ -91,24 +119,12 @@ p {
     justify-content: center;
     align-items: center;
 
-    transition: transform 0.3s ease;
+    padding: 0.45em;
 }
-
-/* For Card, Not looking good */
-/* .card:hover {
-    transform: scale(1.2);
-    z-index: 1;
-} */
-
-/* Not recommended, It has problem! */
-/* .btn.green:hover,    
-.btn.purple:hover {
-    transform: scale(1.2);
-    z-index: 1;
-} */
 
 .btn.green,
 .btn.purple {
+    padding: 0.5em;
     transition: transform 0.5s ease;
 }
 
@@ -116,12 +132,14 @@ p {
     transform: scale(1.05);
 }
 
-.left-card {
-    background: rgb(217, 238, 225);
+.left-card-color {
+    /* background: rgb(217, 238, 225); */
+    background-color: rgb(230, 246, 240);
 }
 
-.right-card {
-    background: rgb(231, 233, 245);
+.right-card-color {
+    /* background: rgb(231, 233, 245); */
+    background-color: rgb(244, 239, 254);
 }
 
 .green {
@@ -149,10 +167,14 @@ p {
     font-size: 14px;
     padding: 10px 6px; /* padding: TOP/BOTTOM | LEFT/RIGHT */
 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    padding: 0.8m 0.7em;
+
     border: 1px solid rgb(238, 238, 238);
     border-radius: 8px;
 
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); */
 }
 
 /* ------------------------------------------------------------------------------- */
